@@ -14,14 +14,16 @@ function allclear(){
 
 function eqto(){
     try{
-        if(arun.value.includes("sin"))
-        {
-            arun.value=eval(arun.value.replace("sin","Math.sin")).toFixed(3);
-        }
-        else if(arun.value.includes("^"))
-            {
+            if(arun.value.includes("^")
+               {
                 arun.value=eval(arun.value.replace("^","**"));
-            }
+               }
+        else if(arun.value.includes("&Sqrt")){
+            arun.value=eval(arun.value.replace("&Sqrt","Math.sqrt");
+        }
+        else{
+            arun.value=eval(arun.value);
+        }
     }
     catch{
         arun.value='error';
